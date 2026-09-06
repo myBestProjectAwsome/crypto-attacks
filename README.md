@@ -1,5 +1,7 @@
 # crypto-attacks
 
+![tests](https://github.com/myBestProjectAwsome/crypto-attacks/actions/workflows/tests.yml/badge.svg)
+
 Implémentations pédagogiques d'attaques cryptographiques classiques. Chaque
 attaque est un module autonome contenant la cible vulnérable, la version
 corrigée, le code de l'exploitation, une démo reproductible et un write-up.
@@ -12,12 +14,12 @@ l'exploitation, et la correction.
 
 | Module | Attaque | Statut |
 |---|---|---|
-| [`padding_oracle/`](padding_oracle/) | Récupération de clair via oracle de padding CBC (Vaudenay 2002) | ✅ |
+| [`padding_oracle/`](padding_oracle/README.md) | Récupération de clair via oracle de padding CBC (Vaudenay 2002) | ✅ |
 
 ## Installation
 
 ```bash
-git clone https://github.com/<user>/crypto-attacks.git
+git clone https://github.com/myBestProjectAwsome/crypto-attacks.git
 cd crypto-attacks
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
